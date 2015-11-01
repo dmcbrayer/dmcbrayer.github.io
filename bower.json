@@ -2,9 +2,9 @@
   "name": "personalsite",
   "version": "0.0.0",
   "authors": [
-    "Billy Overton <overton.billy@gmail.com>"
+    "Daniel McBrayer <dmcbrayer@gmail.com>"
   ],
-  "homepage": "http://billyoverton.com",
+  "homepage": "http://danielmcbrayer.com",
   "ignore": [
     "**/.*",
     "node_modules",

@@ -1,9 +1,9 @@
 {
-  "name": "BillyOvertonBlog",
+  "name": "DanielMcBrayerBlog",
   "version": "0.0.0",
   "description": "Personal Blog",
   "main": "gulpfile.js",
-  "author": "Billy Overton",
+  "author": "Daniel McBrayer",
   "devDependencies": {
     "browser-sync": "^2.7.12",
     "gulp": "^3.9.0",
