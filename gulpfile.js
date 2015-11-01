@@ -39,7 +39,7 @@ gulp.task('icons', function() { 
 });
 
 gulp.task('css', function() { 
-    return sass(config.sassPath + '/main.scss', {
+    return sass('./css/main.scss', {
              style: 'compressed',
              loadPath: [
                  config.sassPath,
@@ -63,7 +63,7 @@ gulp.task('serve', ['build'], function() {
     });
 
     // Start a watch for rebuilds
-    gulp.watch(['_sass/*.scss'], ['css'])
+    gulp.watch(['_sass/**/*.scss'], ['css', 'jekyll-rebuild'])
     gulp.watch(['index.html', '_layouts/*.html', '_includes/*', '_posts/*'], ['jekyll-rebuild']);
 });
 
