@@ -1,0 +1,19 @@
+{
+  "name": "personalsite",
+  "version": "0.0.0",
+  "authors": [
+    "Billy Overton <overton.billy@gmail.com>"
+  ],
+  "homepage": "http://billyoverton.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.3.0",
+    "normalize.scss": "~3.0.2"
+  }
+}
