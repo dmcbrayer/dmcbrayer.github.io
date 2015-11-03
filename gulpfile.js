@@ -64,7 +64,7 @@ gulp.task('serve', ['build'], function() {
 
     // Start a watch for rebuilds
     gulp.watch(['_sass/**/*.scss'], ['css', 'jekyll-rebuild'])
-    gulp.watch(['index.html', '_layouts/*.html', '_includes/*', '_posts/*'], ['jekyll-rebuild']);
+    gulp.watch(['index.html', '_layouts/*.html', '_includes/*', '_posts/*', 'about.md'], ['jekyll-rebuild']);
 });
 
 
