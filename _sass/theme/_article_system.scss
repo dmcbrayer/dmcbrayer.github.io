@@ -126,3 +126,9 @@ article.type-system-rounded {
     font-family: $sans-serif;
   }
 }
+
+.post-content {
+  ul {
+    @extend %default-ul;
+  }
+}

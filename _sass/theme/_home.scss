@@ -2,6 +2,9 @@ $home-max-width: 37.5em;
 $heading-font-size: $h1-font-size;
 $subheading-font-size: $h3-font-size;
 
+.wrapper {
+  padding: $pad-double;
+}
 
 .home {
   padding: $pad-double;

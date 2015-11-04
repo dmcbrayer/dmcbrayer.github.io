@@ -1,10 +1,11 @@
-
+$button-color: #1ABC9C;
+$button-color--hover: darken($button-color, 5%);
 
 .dl-menuwrapper {
   width: 100%;
-  max-width: 300px;
+  max-width: em(200);
   float: left;
-  position: relative;
+  position: absolute;
   @include perspective(1000px);
   @include perspective-origin(50% 200%);
 
@@ -13,7 +14,7 @@
   }
   
   button {
-    background: #ccc;
+    background: $button-color;
     border: none;
     width: 48px;
     height: 45px;
@@ -25,7 +26,7 @@
 
     &:hover,
     &.dl-active {
-      background: #aaa;
+      background: $button-color--hover;
     }
 
     &:after {
@@ -43,7 +44,7 @@
   }
 
   ul {
-    background: #aaa;
+    background: $button-color;
     padding: 0;
     list-style: none;
     @include transform-style(preserve-3d);
@@ -103,6 +104,7 @@
   position: absolute;
   width: 100%;
   opacity: 0;
+  border-radius: 3px;
   pointer-events: none;
   -webkit-transform: translateY(10px);
   transform: translateY(10px);
