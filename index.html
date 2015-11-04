@@ -2,13 +2,31 @@
 layout: default
 ---
 
-<div class="home">
+<section class="home">
 
-  <h1 class="page-heading">Hello.</h1>
-  <h2 class="page-sub-heading">I’m Daniel. I build things for the web.</h2>
+  <div class="home-image-wrapper">
+    <div class="this-also-is-me"></div>
+  </div>
 
-  <p>My name is Daniel McBrayer.  I’m an entrepreneur, an attorney, and a web developer.  This is my personal site, where I practice building things, write a little bit, and show a few projects I’ve started, led, or helped with.</p>
+  <div class="header-group">
+    <h1 class="page-heading">Hello.</h1>
+    <h3 class="page-sub-heading">I’m Daniel. I build things for the web.</h3>
+  </div>
 
-  <p>I have Facebook, Twitter, Instagram, and the other things.</p>
+  <div class="home-text">
+    <p>My name is Daniel McBrayer.  I’m an entrepreneur, an attorney, and a web developer.  This is my personal site, where I practice building things, write a little bit, and show a few projects I’ve started, led, or helped with.</p>
 
-</div>
+    <p>I have Facebook, Twitter, Instagram, and the other things.</p>
+  </div>
+
+</section>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="assets/js/jquery.dlmenu.js"></script>
+<script>
+  $(function() {
+    $( '#dl-menu' ).dlmenu();
+  });
+</script>
