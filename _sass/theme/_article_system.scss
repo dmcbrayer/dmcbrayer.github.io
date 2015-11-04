@@ -1,3 +1,5 @@
+/* I may or may not use this, so it's in a separate file */
+
 article.type-system-rounded {
   $base-border-radius: 3px !default;
   $base-line-height: 1.5em !default;
@@ -127,8 +129,3 @@ article.type-system-rounded {
   }
 }
 
-.post-content {
-  ul {
-    @extend %default-ul;
-  }
-}

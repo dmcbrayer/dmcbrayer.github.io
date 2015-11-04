@@ -47,6 +47,7 @@ $button-color--hover: darken($button-color, 5%);
     background: $button-color;
     padding: 0;
     list-style: none;
+    font-family: $heading-font-family;
     @include transform-style(preserve-3d);
   }
 
@@ -81,22 +82,23 @@ $button-color--hover: darken($button-color, 5%);
   position: absolute;
   top: 0;
   line-height: 50px;
-  font-family: 'icomoon';
+  font-family: $heading-font-family;
   speak: none;
   -webkit-font-smoothing: antialiased;
-  content: "\e000";
+  content: "\003e";
+  color: $white;
 }
 
 .dl-menuwrapper li.dl-back:after {
   left: 10px;
-  color: rgba(212,204,198,0.3);
+  color: $white;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 .dl-menuwrapper li > a:after {
   right: 10px;
-  color: rgba(0,0,0,0.15);
+  color: $white;
 }
 
 .dl-menuwrapper .dl-menu {
