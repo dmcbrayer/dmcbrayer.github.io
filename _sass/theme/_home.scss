@@ -4,6 +4,7 @@ $subheading-font-size: $h3-font-size;
 
 .wrapper {
   padding: $pad-double;
+  @include outer-container;
 }
 
 .home {
