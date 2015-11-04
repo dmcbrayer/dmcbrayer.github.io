@@ -2,6 +2,13 @@ $home-max-width: 37.5em;
 $heading-font-size: $h1-font-size;
 $subheading-font-size: $h3-font-size;
 
+.tree-bg {
+  background-image: url('/assets/img/bg.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .wrapper {
   padding: $pad-double;
   @include outer-container;
@@ -37,7 +44,7 @@ $subheading-font-size: $h3-font-size;
   margin: $pad;
 
   .this-also-is-me {
-    @include retina-image('../../assets/img/this_also_is_me', em(200));
+    @include retina-image('/assets/img/this_also_is_me', em(200));
     @include size(em(200));
     display: block;
     border-radius: 50%;
