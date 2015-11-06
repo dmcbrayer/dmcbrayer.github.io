@@ -16,3 +16,8 @@
     @extend %default-ol;
   }
 }
+
+.post-list {
+  margin-top: $pad-double;
+  font-size: 1.5em;
+}
