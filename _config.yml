@@ -25,4 +25,4 @@ gems:
   - jekyll-sitemap
 
 # Excludes
-exclude: [gulpfile.js, package.json, node_modules, bower.json, bower_components]
+exclude: [gulpfile.js, package.json, node_modules, bower.json, bower_components, _assets]
