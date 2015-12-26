@@ -24,5 +24,6 @@ markdown: kramdown
 gems:
   - jekyll-sitemap
 
+include: ["_pages"]
 # Excludes
 exclude: [gulpfile.js, package.json, node_modules, bower.json, bower_components, _assets]
