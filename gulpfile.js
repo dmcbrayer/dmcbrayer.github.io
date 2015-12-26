@@ -10,49 +10,15 @@ var cache           = require('gulp-cache');
 var concat          = require('gulp-concat');
 var uglify          = require('gulp-uglify');
 
-var config = {
-    assetDir: './_assets',
-    bowerDir: './bower_components',
-    outputDir: './_site',
-
-    src: {
-        sass: './_assets/scss',
-        sassFile: './_assets/scss/main.scss',
-        scripts: [
-            './bower_components/jquery/dist/jquery.js',
-            './_assets/scripts/modernizr.custom.js',
-            './_assets/scripts/**/*.js', 
-        ],
-        images: './_assets/img/**/*',
-        icons: './bower_components/fontawesome/fonts/**.*'
-    },
-
-    jekyllDest: {
-        sass: './assets/css',
-        icons: './assets/fonts',
-        scripts: './assets/scripts',
-        images: './assets/img'
-    },
-
-    siteDest: {
-        images: './_site/assets/img',
-        scripts: './_site/assets/scripts',
-        sass: './_site/assets/css',
-        icons: './_site/assets/fonts'
-    }
-}
-
-var messages = {
-    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
-};
+var config          = require('./gulp-config');
 
 gulp.task('bower', function() { 
     return bower()
-         .pipe(gulp.dest(config.bowerDir)) 
+         .pipe(gulp.dest(config.bowerDirectory)) 
 });
 
 gulp.task('jekyll-build', ['css','scripts','images','icons','bower'], function (done) {
-    browserSync.notify(messages.jekyllBuild);
+    browserSync.notify(config.messages.jekyllBuild);
     return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
              .on('close', done);
 });
@@ -72,8 +38,8 @@ gulp.task('css', function() { 
              style: 'compressed',
              loadPath: [
                  config.src.sass,
-                config.bowerDir + '/normalize.scss/',
-                config.bowerDir + '/fontawesome/scss',
+                config.bowerDirectory + '/normalize.scss/',
+                config.bowerDirectory + '/fontawesome/scss',
              ],
             compass: true
          }) 
