@@ -12,6 +12,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Personal site for Daniel McBrayer, web aficionado.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dmcbrayer.github.io" # the base hostname & protocol for your site
+facebook_username: daniel.mcbrayer.10
+instagram_username: dmcbrayer
 twitter_username: dmcbrayer
 github_username:  dmcbrayer
 
