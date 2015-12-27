@@ -1,6 +1,7 @@
 $post-font-size: 1.5em;
 
 .post {
+  color: $dark-gray;
   margin-top: $pad-double;
   @include media($medium-screen) {
     margin-top: auto;
