@@ -1,3 +1,5 @@
+$post-font-size: 1.5em;
+
 .post {
   margin-top: $pad-double;
   @include media($medium-screen) {
@@ -19,5 +21,5 @@
 
 .post-list {
   margin-top: $pad-double;
-  font-size: 1.5em;
+  font-size: $post-font-size;
 }

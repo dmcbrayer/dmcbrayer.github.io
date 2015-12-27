@@ -1,9 +1,25 @@
+$mobile-top-margin: 4em;
+$heading-font-size: $h1-font-size;
+$subheading-font-size: $h3-font-size;
+
 .page {
-  margin-top: $pad-double;
+  margin-top: $mobile-top-margin;
 
   @include media($medium-screen) {
     margin-top: auto;
     @include span-columns(6);
     @include shift(3);
   }
+}
+
+.page-heading {
+  font-size: $heading-font-size;
+  font-weight: normal;
+  color: $h1-font-color;
+  margin-bottom: 0;
+}
+
+.page-sub-heading {
+  font-size: $subheading-font-size;
+  font-weight: normal;
 }
