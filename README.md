@@ -1,6 +1,14 @@
 # This is my personal site
 
-It's where I do things like publish personal blog posts and link to some of my other projects.  But it's also a testing ground, where I try out some of the things I've been learning recently.  This site is built on jekyll and is served up with gulp as the task runner.  Jekyll's the skeleton, gulp is the brains.
+It's where I do things like publish personal blog posts and link to some of my other projects.  But it's also a testing ground, where I try out some of the things I've been learning recently.  This site is built on [Jekyll](https://jekyllrb.com) and is served up with [Gulp](http://gulpjs.com) as the task runner.  Jekyll's the skeleton, Gulp is the brains.
+
+## Installing dependencies
+
+This requires npm (get it [here](http://blog.npmjs.org/post/85484771375/how-to-install-npm)), gulp, bundler.
+
+Once you've installed npm, to get gulp, run `npm install -g gulp`.
+
+To get bundler run `gem install bundler`.  This assumes you already have ruby installed.  
 
 ## Installation and use
 
@@ -57,4 +65,4 @@ This is very similary to `_layouts`, but it's a little more general.  It's just 
 
 ### assets
 
-This is gulp's output from running its operations on the `_assets` folder.  I wish there was a better way, but apparently jekyll requires it to be done this way.  So under the hood, gulp compiles all the assets into this directory, then when jekyll runs it just copies this folder into `_site` so that the live site will be able to find the assets.
+This is gulp's output from running its operations on the `_assets` folder.  I wish there was a better way, but apparently jekyll requires it to be done this way.  So under the hood, gulp compiles all the assets into this directory, then when jekyll runs it just copies this folder into `_site` so that the live site will be able to find the assets.  You can set the structure of this in the `gulp-config.js` file if you want to change folder names and all that.  If you do, also remember to change the html tags that reference those assets.
