@@ -1,4 +1,5 @@
 $post-font-size: 1.5em;
+$post-top-margin: 2em;
 
 .post {
   color: $dark-gray;
@@ -17,6 +18,14 @@ $post-font-size: 1.5em;
 
   ol {
     @extend %default-ol;
+  }
+}
+
+#post-title {
+  margin-top: $post-top-margin;
+
+  @include media($medium-screen) {
+    margin-top: auto;
   }
 }
 
