@@ -6,16 +6,28 @@ $light-gray:        #ddd;
 $black:             #221920;
 $white:             #FAFAFA;
 
-$h1-font-color: #3498DB;
+// Coolors color scheme
+$theme-green: #16a085;
+$theme-blue: #3498db;
+$theme-slate: #587291;
+$theme-turqoise: #1ccad8;
+$theme-red: #d5573b;
+$theme-purple: #34495e;
+
+$test: #34495e;
+
+$main-color: $theme-green;
+// Text colors
+$h1-font-color: $white;
 
 // Font Colors
-$base-font-color: $dark-gray;
-$action-color: $blue;
+$base-font-color: $white;
+$action-color: mix($base-font-color, $main-color, 75%);
 
 // Border
 $base-border-color: $light-gray;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors
-$base-background-color: #fff;
+$base-background-color: lighten($main-color, 5%);
 $secondary-background-color: tint($base-border-color, 75%);

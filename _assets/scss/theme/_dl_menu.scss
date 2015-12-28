@@ -1,4 +1,4 @@
-$button-color: #1ABC9C;
+$button-color: $main-color;
 $button-color--hover: darken($button-color, 5%);
 
 .dl-menuwrapper {

@@ -11,8 +11,8 @@ $pad-quarter:      $pad / 4;
 $spacing-unit:     30px;
 
 // Typography
-@import url(https://fonts.googleapis.com/css?family=Cardo|Quicksand);
-$base-font-family: "Cardo", $helvetica;
+@import url(https://fonts.googleapis.com/css?family=Quicksand|Montserrat);
+$base-font-family: "Montserrat", $helvetica;
 $heading-font-family: "Quicksand", $base-font-family;
 
 // Font Sizes
@@ -34,7 +34,6 @@ $base-border-radius: 3px;
 $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
-
 
 
 // Forms

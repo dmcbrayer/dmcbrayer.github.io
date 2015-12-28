@@ -1,12 +1,5 @@
 $home-max-width: 37.5em;
 
-.tree-bg {
-  background-image: url('/assets/img/bg.png');
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .wrapper {
   padding: $pad-double;
   @include outer-container;
@@ -14,6 +7,10 @@ $home-max-width: 37.5em;
 
 .home {
   padding: $pad-double;
+
+  a {
+    text-decoration: underline;
+  }
 
   .home-text {
     max-width: $home-max-width;
@@ -35,6 +32,7 @@ $home-max-width: 37.5em;
     @include size(em(200));
     display: block;
     border-radius: 50%;
+    border: 3px solid $white;
     margin: auto;
   }
 }
