@@ -8,6 +8,10 @@ $home-max-width: 37.5em;
 .home {
   padding: $pad-double;
 
+  a {
+    text-decoration: underline;
+  }
+
   .home-text {
     max-width: $home-max-width;
     margin: auto;
